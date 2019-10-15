@@ -1,5 +1,6 @@
 class SensuGo < Formula
-    version = '5.14.0'
+    version '5.14.0'
+    version_scheme 1
     desc "Sensu Go"
     homepage "https://sensu.io"
     url "https://s3-us-west-2.amazonaws.com/sensu.io/sensu-go/#{version}/sensu-go_#{version}_darwin_amd64.tar.gz"
