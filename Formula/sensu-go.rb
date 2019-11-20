@@ -1,5 +1,5 @@
 class SensuGo < Formula
-    version '5.14.0'
+    version '5.15.0'
     version_scheme 1
     desc "Sensu Go"
     homepage "https://sensu.io"
