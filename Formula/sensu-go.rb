@@ -1,10 +1,9 @@
 class SensuGo < Formula
-    version '6.1.2'
-    version_scheme 1
+    version = '6.5.4'
     desc "Sensu Go"
     homepage "https://sensu.io"
     url "https://s3-us-west-2.amazonaws.com/sensu.io/sensu-go/#{version}/sensu-go_#{version}_darwin_amd64.tar.gz"
-    sha256 "ec006bb05073350bff329094cbc304fdae2d50b1b9677f5b6d9605478ff06807"
+    sha256 "c07f2c994d8308ff75fbc7e9653d095802320bddd05d978fdf0cf5dff32f5e4b"
 
     def install
         bin.install "sensuctl"
