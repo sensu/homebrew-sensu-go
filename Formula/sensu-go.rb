@@ -10,7 +10,13 @@ class SensuGo < Formula
     def install
         bin.install "sensuctl"
         bin.install "sensu-agent"
+        (bin/"download_sensu_agent_config").write <<--EOS.undent
+        #!/bin/sh
+        curl -L https://docs.sensu.io/sensu-go/latest/files/agent.yml -o /etc/sensu/agent.yml
     end
+    
+    #def post_install
+        
     
     test do
         system "#{bin}/sensuctl", "--help"
