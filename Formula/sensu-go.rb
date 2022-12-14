@@ -24,12 +24,6 @@ class SensuGo < Formula
         system "#{etc}/sensu/download_sensu_agent.sh"
 
         (var/"cache/sensu").mkpath
-
-        run [bin/"sensu-agent", "start", "-c", etc/"sensu/agent.yml", "--cache-dir", var/"cache/sensu"]
-        keep_alive true
-        working_dir var
-        log_path var/"log/sensu-agent.log"
-        error_log_path var/"log/sensu-agent.log"
     end
 
     def post_install
