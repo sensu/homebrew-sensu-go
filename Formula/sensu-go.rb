@@ -1,9 +1,9 @@
 class SensuGo < Formula
-    version = '6.9.0'
+    version = '6.9.1'
     desc "Sensu Go command line tool and agent"
     homepage "https://sensu.io"
     url "https://s3-us-west-2.amazonaws.com/sensu.io/sensu-go/#{version}/sensu-go_#{version}_darwin_amd64.tar.gz"
-    sha256 "b0090da83678a9271ffe22f98b31f39d8609652d1af08067ad2086af32140038"
+    sha256 "350c019f6c72667a7c805e6a7e61e88c17cc6d2e0394e0cb3e305190df2dce23"
     license "MIT"
     head "https://github.com/asachs01/homebrew-sensu-go.git"
 
